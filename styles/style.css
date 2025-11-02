@@ -107,10 +107,11 @@ main {
 .cover {
     position: relative;
     padding: 165px 50px 50px 50px;
-    background-image: url(/images/cover.jpg);
+    background: url(/images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: 0;
 }
 
 .cover__title {
