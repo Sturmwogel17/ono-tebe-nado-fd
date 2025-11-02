@@ -2,9 +2,14 @@
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
-    padding: 92px 50px;
+    padding: 80px 10px 95px 29px;
     font-size: 18px;
     align-items: center;
+}
+
+.header__menu {
+    display: flex;
+    justify-self: center;
 }
 
 .header__link {
@@ -16,43 +21,26 @@
     display: flex;
     list-style: none;
     gap: 32px;
+    padding-right: 7px;
 }
 
 .header__links-list-item {
     list-style: circle;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .header__links-list-item_no-bullit {
     list-style: none;
 }
 
-.text-link:hover {
-     background-color: #000000;
-    color: #FFF;
-}
-
 .header__link_active {
     text-decoration: none;
 }
 
-.header-logo {
-    display: block;
-    justify-self: center;
-    align-self: center;
-    width: 100px;
- 
-}
-.header-logo-image{
-    width: 100px;
-}
-
-.address {
-    font-style: inherit;
-}
-
-.header-address {
-    justify-self: end;
-    font-style: inherit;
+.header__logo {
+    width: 148px;
+    height: 105px;
 }
 
 .address-item {
@@ -60,15 +48,21 @@
     font-size: 18px;
     line-height: 1.35;
     text-underline-position: under;
-   
+}
+
+.header-address {
+    padding-left: 185px;
+    font-size: 18px;
+    line-height: 24.3px;
+    letter-spacing: 0.18px;
+    font-family: "Raleway", sans-serif;
+    list-style-type: none;
+    font-style: normal;  
 }
 
 .address-text {
     display: grid;
-    font-size: 18px;
-    line-height: 1.35;
-    justify-self: end;
-    
+    justify-self: end; 
 }
 
 .address__address-text {
@@ -116,6 +110,7 @@ main {
     background-image: url(/images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .cover__title {
@@ -127,7 +122,7 @@ main {
     color: #FFF;
     font-weight: bold;
     font-size: 100px;
-    line-height: 1.15;
+    line-height: 100%;
     letter-spacing: 30px;
     text-transform: uppercase;
 }
@@ -148,8 +143,6 @@ main {
 .letter-spacing-extended {
     letter-spacing: 27px;
 }
-
-/* Убирает ненужный отступ в конце слова, создаваемый свойством letter-spacing всего элемента */
 
 .remove-spacing {
     letter-spacing: normal;
@@ -190,37 +183,226 @@ main {
     color: #000000;
     background-color: #FFF;
 }
+
+
+.lots { 
+    width: auto;
+    height: 723px;  
+}
+.lots__card-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.lots__card-list-item {
+    position: relative;
+    width: 334px;
+    min-height: 596px;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 40px;
+    height: 100%;
+    z-index: 2;
+
+}
+
+.card_type_film {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/card-lot-03.jpg);
+    
+}
+
+.card-link {
+    height: 100%;
+    text-decoration: none;
+    z-index: 2;
+    
+}
+
+.lots__heading {
+    font-family: Raleway sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    text-transform: uppercase;
+    display: block;
+    margin: 40px auto 31px 44px;
+    
+}
+.card__title {
+    align-self: flex-start;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: auto;
+    color: #FFF;
+    z-index: 2;
+    
+}
+
+.card__text {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    text-decoration: none;
+    color: #FFF;
+    z-index: 2;
+
+}
+
+
+
+.view-more {
+    display: block;
+    padding-top: 30px;
+    margin-left: 64px;
+    text-underline-offset: 3px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: 1;
     width: 100%;
     height: 100%;
     opacity: 0.6000000238418579;
     background-color: #000000;
 }
 
-.title {
-   
+.about_container {
+    display: grid;
+    grid-template-columns: 334px repeat(1, 1fr);
+    gap: 25px;
+    padding: 34px 24px 0px;
 }
 
-.description {
+.about_logo {
+    justify-self: center;
+    background-color: #000;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_logo_image {
+    width: 141.54px;
+    height: 112.55px;
+    align-self: center; 
+}
+
+.about_content { 
+     display: flex;
+     flex-direction: column;
+     gap: 24px;
+     padding-top: 100px;
+}
+
+.title_about {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.96px;
+}
+
+    .about__text {
+    align-self: flex-start;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.text_up {
+    padding-top: 76px;
+}
+
+.text_down {
+    padding-top: 25px;
     
 }
 
-
-
-.lots {
-
-}
-
 .footer {
-    position: absolute;
-    width: 1100px;
-    height: 180px;
-    left: 0px;
-    top: 2848px;
+    padding: 124px 29px 88px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 140px;
+    align-items: flex-start;
+
+    }
+
+    .footer__address {
+    font-style: normal;
+    padding-left: 0px;
+}
+
+.footer__menu {
+    padding-left: 35px;
+    
+}
+
+.footer__menu-list {
+    list-style-type: none;
+    text-underline-offset: 3px;
+
+}
+
+.footer__menu-list-item {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__menu-link {
+    list-style-type: none;
+    text-underline-offset: 3px;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 48px; 
 }
 
 
+.footer__social-icon {
+    width: 48px;
+    height: 48px;
+}
