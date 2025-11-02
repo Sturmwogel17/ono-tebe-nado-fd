@@ -57,12 +57,14 @@
     letter-spacing: 0.18px;
     font-family: "Raleway", sans-serif;
     list-style-type: none;
-    font-style: normal;  
+    font-style: normal;
+
 }
 
 .address-text {
     display: grid;
-    justify-self: end; 
+    justify-self: end;
+
 }
 
 .address__address-text {
@@ -185,11 +187,11 @@ main {
     background-color: #FFF;
 }
 
-
 .lots { 
     width: auto;
     height: 723px;  
 }
+
 .lots__card-list {
     display: flex;
     list-style: none;
@@ -323,7 +325,8 @@ main {
 .about_logo_image {
     width: 141.54px;
     height: 112.55px;
-    align-self: center; 
+    align-self: center;
+
 }
 
 .about_content { 
